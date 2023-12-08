@@ -1,3 +1,4 @@
+
 const buildHTML = (XHR) => {
   const item = XHR.response.post;
   const html = `
@@ -46,3 +47,10 @@ function post (){
 };
 
 window.addEventListener('load', post);
+
+function post (){
+  console.log("イベント発火");
+};
+
+window.addEventListener('load', post);
+
